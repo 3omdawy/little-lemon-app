@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Design Guide */
+:root {
+    --primary-green: #495E57;
+    --primary-yellow: #F4CE14;
+    --secondary-orange: #EE9972;
+    --secondary-pink: #FBDABB;
+    --highlight-light: #EDEFEE;
+    --highlight-dark: #333333;
+}
+
+.display {
+    font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    font-weight: normal;
+    color: var(--primary-yellow);
+}
+.subtitle {
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--highlight-light);
+}
+.lead {
+    font-family: 'Karla', serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+.section-category {
+    font-family: 'Karla', serif;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.section-title {
+    font-family: 'Karla', serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: var(--highlight-dark);
+}
+.card-title {
+    font-family: 'Karla', serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.card-paragraph {
+    font-family: 'Karla', serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color: var(--highlight-light);
+}
+.highlight {
+    font-family: 'Karla', serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Common styles */
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    :root {
+        font-size: 14px;
+    }
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+html {
+    color: var(--highlight-dark);
+    font-family: 'Karla', serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+button {
+    font-family: 'Karla', serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+    border-radius: 1rem;
+    background-color: var(--primary-yellow);
+    color: var(--highlight-dark);
+    border-color: var(--primary-green);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--secondary-orange); color: var(--highlight-dark);
+    transition: 0.2s linear;
+}

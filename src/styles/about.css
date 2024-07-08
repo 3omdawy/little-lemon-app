@@ -1,0 +1,32 @@
+#about img {
+    max-width: 40%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+#about img:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+@media screen and (max-width: 600px) {
+    #about {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    #about img {max-width: 100%;}
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    header img {
+        content: url("../img/LittleLemon-small.jpg");
+        width: 40px;
+    }
+}
+
+nav a:link{color: var(--highlight-dark);}
+nav a:visited{color: var(--highlight-dark);}
+nav a:hover {color: var(--secondary-orange);}
+nav a:active {color: var(--secondary-orange);}

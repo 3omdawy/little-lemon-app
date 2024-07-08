@@ -1,0 +1,32 @@
+#menuItems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    grid-auto-rows: 1fr;
+}
+
+#menuItems article {
+    background-color: var(--highlight-light);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.price {
+    color: var(--secondary-orange);
+}
+
+#menuItems .card-body {
+    padding: 1rem;
+    margin: 0;
+}
+
+#menuItems img {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #menuItems {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+#hero img {
+    max-width: 40%;
+    object-fit: cover;
+}
+#hero {
+    background-color: var(--primary-green);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+@media screen and (max-width: 600px) {
+    #hero {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    #hero img {max-width: 100%;}
+}

@@ -1,17 +1,22 @@
 import Logo from "../img/Logo.svg"
+import '../styles/global.css';
+import '../styles/header.css';
 
 function Navigation() {
+    let navLinks = [
+        { path: "/#hero", text: "Home", class: "hideOnMobile" },
+        { path: "/#about", text: "About", class: "hideOnMobile" },
+        { path: "/#highlights", text: "Menu", class: "" },
+        { path: "/#hero", text: "Reservations", class: "" },
+        { path: "/#highlights", text: "Order Online", class: "" },
+        { path: "/#hero", text: "Login", class: "hideOnMobile" },
+    ];
     return (
-        <header style={headerStyles.container}>
+        <header style={headerStyles.container} className="container">
             <img src={Logo} alt="Little lemon logo" style={headerStyles.image}></img>
-            <nav style={{width: "100%"}}>
+            <nav>
                 <ul style={headerStyles.navbar}>
-                    <li style={headerStyles.navitem}><a href="/#hero" style={headerStyles.navlink}>Home</a></li>
-                    <li style={headerStyles.navitem}><a href="/#about" style={headerStyles.navlink}>About</a></li>
-                    <li style={headerStyles.navitem}><a href="/#highlights" style={headerStyles.navlink}>Menu</a></li>
-                    <li style={headerStyles.navitem}><a href="/#hero" style={headerStyles.navlink}>Reservations</a></li>
-                    <li style={headerStyles.navitem}><a href="/#highlights" style={headerStyles.navlink}>Order Online</a></li>
-                    <li style={headerStyles.navitem}><a href="/#hero" style={headerStyles.navlink}>Login</a></li>
+                    {navLinks.map(item => <li key={item.text} style={headerStyles.navitem} className={item.class}><a href={item.path} style={headerStyles.navlink} className="section-title">{item.text}</a></li>)}
                 </ul>
             </nav>
         </header >
@@ -23,19 +28,15 @@ const headerStyles = {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "20px",
-    },
-    image: {
-        width: "148px",
-        height: "48px",
     },
     navbar: {
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
         listStyle: "none",
     },
     navitem: {
-        padding: "1.5%",
+        paddingLeft: "1rem",
         textAlign: "center"
     },
     navlink: {
