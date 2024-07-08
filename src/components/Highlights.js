@@ -1,9 +1,10 @@
 import MenuItemCard from './MenuItemCard';
-import GreekSalad from'../img/Greek Salad.jpg';
-import bruschetta from'../img/bruschetta.jpg';
-import pasta from'../img/pasta.jpg';
+import GreekSalad from '../img/Greek Salad.jpg';
+import bruschetta from '../img/bruschetta.jpg';
+import pasta from '../img/pasta.jpg';
 import '../styles/global.css';
 import '../styles/highlights.css';
+import { Link } from 'react-router-dom';
 
 function Highlights() {
     let menuItems = [
@@ -15,7 +16,7 @@ function Highlights() {
         <section id="highlights" className="container">
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
                 <h1 className="section-title">Specials</h1>
-                <button type="button">Order Online</button>
+                <Link to="/order" className='button' type="button" style={{ marginTop: "1rem" }}>Order Online</Link>
             </div>
             <section id="menuItems">
                 {menuItems.map(item => <MenuItemCard key={item.title} item={item} />)}

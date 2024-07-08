@@ -17,7 +17,6 @@
     font-family: 'Markazi Text', serif;
     font-size: 4rem;
     font-weight: normal;
-    color: var(--primary-yellow);
 }
 .subtitle {
     font-family: 'Markazi Text', serif;
@@ -101,7 +100,8 @@ img {
     border-radius: 1rem;
 }
 
-button {
+.button {
+    text-decoration: none;
     font-family: 'Karla', serif;
     font-size: 1.125rem;
     font-weight: normal;
@@ -116,7 +116,7 @@ button {
     border: none;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--secondary-orange); color: var(--highlight-dark);
     transition: 0.2s linear;
 }

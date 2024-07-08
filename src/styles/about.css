@@ -13,6 +13,10 @@
     transition: 1s ease;
 }
 
+#about .display {
+    color: var(--primary-yellow);
+}
+
 #about {
     display: flex;
     flex-direction: row;
