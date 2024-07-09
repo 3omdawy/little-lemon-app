@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ReserveTable from '../components/ReserveTable';
 
-function ReserveScreen() {
+function BookingPage() {
     return (
         <>
             <Header></Header>
@@ -14,4 +14,4 @@ function ReserveScreen() {
     );
 }
 
-export default ReserveScreen;
+export default BookingPage;

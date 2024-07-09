@@ -1,0 +1,26 @@
+#reserveTable .display {
+    text-align: center;
+    color: var(--highlight-dark);
+}
+
+.reserve-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .reserve-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.reserve-hero form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
+}
