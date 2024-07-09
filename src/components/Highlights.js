@@ -14,10 +14,10 @@ function Highlights() {
     ];
     return (
         <section id="highlights" className="container">
-            <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+            <article style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
                 <h1 className="section-title">Specials</h1>
-                <Link to="/order" className='button' type="button" style={{ marginTop: "1rem" }}>Order Online</Link>
-            </div>
+                <button className='button' type="button" style={{ marginTop: "1rem" }}><Link to="/order">Order Online</Link></button>
+            </article>
             <section id="menuItems">
                 {menuItems.map(item => <MenuItemCard key={item.title} item={item} />)}
             </section>

@@ -13,6 +13,7 @@
 
 .price {
     color: var(--secondary-orange);
+    font-weight: bold;
 }
 
 #menuItems .card-body {

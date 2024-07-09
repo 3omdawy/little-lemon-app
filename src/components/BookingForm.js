@@ -119,7 +119,7 @@ function BookingForm() {
                 </Select>
                 <FormErrorMessage>{formik.errors.occasion}</FormErrorMessage>
             </FormControl>
-            <Button data-testid = "reserve-button" role="button" type="submit" className="button" style={{ backgroundColor: "var(--primary-yellow)", color: "var(--highlight-dark)" }} isLoading={isLoading} loadingText='Submitting'>
+            <Button data-testid="reserve-button" role="button" type="submit" className="button" colorScheme="green" width="full" isLoading={isLoading} loadingText='Submitting'>
                 Book Now
             </Button>
         </form>

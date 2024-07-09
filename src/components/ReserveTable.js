@@ -13,10 +13,10 @@ function ReserveTable() {
                 <br />
                 <strong>Little Lemon is the right place 🎯</strong>
             </p>
-            <div className="reserve-hero">
+            <article className="reserve-hero">
                 <img src={Image} alt="Our customer enjoying their stay after booking their tables"></img>
                 <BookingForm />
-            </div>
+            </article>
         </section>
     );
 }

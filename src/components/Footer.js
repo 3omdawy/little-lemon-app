@@ -8,7 +8,7 @@ function Footer() {
         <footer className="container">
             <img src={logoImage} alt="Little Lemon logo" />
             <article>
-                <span className="card-title">Doormat Navigation</span>
+                <h1 className="card-title">Doormat Navigation</h1>
                 <nav>
                     <ul>
                         <li><Link to="/" className="highlight">Home</Link></li>
@@ -21,7 +21,7 @@ function Footer() {
                 </nav>
             </article>
             <article>
-                <span className="card-title">Contact</span>
+                <h1 className="card-title">Contact</h1>
                 <nav>
                     <ul>
                         <li className="highlight">41b JK Street - City - Country</li>
@@ -31,7 +31,7 @@ function Footer() {
                 </nav>
             </article>
             <article>
-                <span className="card-title">Social Media Links</span>
+                <h1 className="card-title">Social Media Links</h1>
                 <nav>
                     <ul>
                         <li><a href="https://facebook.com/" className="highlight">Facebook</a></li>
