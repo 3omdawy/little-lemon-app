@@ -6,8 +6,13 @@ For Figma files, see [/figma](/figma)
 
 ## Pages
 1. Home page containing a hero section about the restaurant in addition to special items in the menu
+![Home](https://github.com/user-attachments/assets/1b9f50c1-a026-4da3-bc87-b81d6bc3fe2d)
+
 2. About page containing some information about the restaurant and some testimonials
+![About](https://github.com/user-attachments/assets/2087455a-abd2-4a4b-8fef-0fb1f841f55a)
+
 3. Reservations page containing a form to reserve a table
+![Reservations](https://github.com/user-attachments/assets/bed63c77-b970-44f8-8284-65a2f1f02ae4)
 
 ## Technical Highlights
 * Design is fairly responsive across all devices
