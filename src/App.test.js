@@ -16,7 +16,7 @@ test('Initialization of available times', () => {
   Element.prototype.scrollIntoView = jest.fn();
   render(<App />);
 
-  expect(initializeTimes()).not.toHaveLength(0);;
+  expect(initializeTimes()).not.toHaveLength(0);
 });
 
 test('Update of available times', () => {

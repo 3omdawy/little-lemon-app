@@ -13,10 +13,10 @@ function Footer() {
                     <ul>
                         <li><Link to="/" className="highlight">Home</Link></li>
                         <li><Link to="/about" className="highlight">About</Link></li>
-                        <li><Link to="/menu" className="highlight">Menu</Link></li>
                         <li><Link to="/reserve" className="highlight">Reservations</Link></li>
+                        {/*<li><Link to="/menu" className="highlight">Menu</Link></li>
                         <li><Link to="/order" className="highlight">Order online</Link></li>
-                        <li><Link to="/login" className="highlight">Login</Link></li>
+                        <li><Link to="/login" className="highlight">Login</Link></li>*/}
                     </ul>
                 </nav>
             </article>

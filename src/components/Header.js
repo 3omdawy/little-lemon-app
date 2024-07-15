@@ -5,12 +5,12 @@ import '../styles/header.css';
 
 function Navigation() {
     let navLinks = [
-        { path: "/", text: "Home", class: "hideOnMobile" },
-        { path: "/about", text: "About", class: "hideOnMobile" },
-        { path: "/menu", text: "Menu", class: "" },
-        { path: "/reserve", text: "Reservations", class: "" },
+        /*{ path: "/", text: "Home", class: "hideOnMobile" },
         { path: "/order", text: "Order Online", class: "" },
         { path: "/login", text: "Login", class: "hideOnMobile" },
+        { path: "/menu", text: "Menu", class: "" },*/
+        { path: "/about", text: "About", class: "" },
+        { path: "/reserve", text: "Reservations", class: "" },
     ];
     return (
         <header id="header" style={headerStyles.container} className="container">

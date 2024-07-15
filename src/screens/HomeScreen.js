@@ -12,8 +12,8 @@ function HomeScreen() {
             <main>
                 <Hero></Hero>
                 <Highlights></Highlights>
-                <Testimonials></Testimonials>
-                <About></About>
+                {/*<Testimonials></Testimonials>
+                <About></About>*/}
             </main>
             <Footer></Footer>
         </>
